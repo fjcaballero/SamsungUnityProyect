@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/test1.unity
+- path: Assets/enemigos_y_pistola/CalvoMechanics.unity
   isLoaded: 1
   isActive: 1

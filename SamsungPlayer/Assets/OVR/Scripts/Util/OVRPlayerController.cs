@@ -145,7 +145,7 @@ public class OVRPlayerController : MonoBehaviour
 
 	protected virtual void Update()
 	{
-        if (OVRInput.GetDown(OVRInput.Button.One))
+		if (OVRInput.GetDown(OVRInput.Button.One) || Input.GetKeyDown(KeyCode.Space))
         {
             Jump();
         }
@@ -254,8 +254,10 @@ public class OVRPlayerController : MonoBehaviour
 			MoveScale = 0.70710678f;
 
 		// No positional movement if we are in the air
+		/*
 		if (!Controller.isGrounded)
 			MoveScale = 0.0f;
+		*/
 
 		MoveScale *= SimulationRate * Time.deltaTime;
 
